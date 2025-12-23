@@ -1,0 +1,272 @@
+/* ===== Base (Laptop is reference size) ===== */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 95vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: #444;
+}
+
+.modal-body { text-align: center; }
+
+.modal-body h2 {
+  font-size: 1.75rem;
+  color: #1d2d44;
+  margin-bottom: 0.5rem;
+}
+
+.modal-info {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.modal-info p {
+  margin: 0.3rem 0;
+}
+
+.modal-imagePath {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Dual Contact */
+.modal-info.dual-contact {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.modal-info.dual-contact div {
+  flex: 1;
+}
+
+/* Button */
+.locate-btn {
+  display: inline-block;
+  background-color: #1d2d44;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+  margin-bottom: 0.4rem;
+}
+
+.locate-btn:hover {
+  background-color: white;
+  border: 2px solid #1d2d44;
+  color: #1d2d44;
+}
+
+.supporting-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.supporting-item {
+  background: #f6f6f6;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.supporting-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.supporting-item p {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+/* -------------------------
+   RESPONSIVE BREAKPOINTS
+------------------------- */
+
+/* 📱 Small Mobiles (320px–480px) */
+@media (max-width: 480px) {
+  .modal-content { padding: 1.3rem; }
+
+  .modal-body h2 {
+    font-size: 1.35rem;
+  }
+
+  .modal-info {
+    font-size: 0.95rem;
+  }
+
+  .modal-imagePath {
+    width: 85px;
+    height: 85px;
+  }
+
+  .close {
+    font-size: 1.25rem;
+  }
+
+  .locate-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+  .supporting-images {
+    grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+    gap: 10px;
+  }
+
+  .supporting-item img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .supporting-item p {
+    font-size: 0.75rem;
+  }
+}
+
+/* 📱 Medium Mobiles (480px–600px) */
+@media (min-width: 480px) and (max-width: 600px) {
+  .modal-content { padding: 1.6rem; }
+
+  .modal-body h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal-info {
+    font-size: 1.05rem;
+  }
+
+  .modal-imagePath {
+    width: 100px;
+    height: 100px;
+  }
+
+ .supporting-images {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  }
+
+  .supporting-item img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .supporting-item p {
+    font-size: 0.8rem;
+  }
+}
+
+/* 📝 Tablets (600px–900px) */
+@media (min-width: 600px) and (max-width: 900px) {
+  .modal-content { padding: 1.8rem; }
+
+  .modal-body h2 {
+    font-size: 1.65rem;
+  }
+
+  .modal-info {
+    font-size: 1.15rem;
+  }
+
+  .modal-imagePath {
+    width: 115px;
+    height: 115px;
+  }
+  .supporting-images {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .supporting-item img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+/* 🖥 Laptops (900px–1200px) — your current perfect design */
+@media (min-width: 900px) and (max-width: 1200px) {
+  /* No changes — your laptop design is ideal */
+}
+
+/* 🖥 Large Desktops (1200px+) */
+@media (min-width: 1200px) {
+  .modal-content {
+    max-width: 650px;
+    padding: 2.3rem;
+  }
+
+  .modal-body h2 {
+    font-size: 2rem;
+  }
+
+  .modal-info {
+    font-size: 1.3rem;
+  }
+
+  .modal-imagePath {
+    width: 140px;
+    height: 140px;
+  }
+  .supporting-images {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .supporting-item img {
+    width: 95px;
+    height: 95px;
+  }
+
+  .supporting-item p {
+    font-size: 1rem;
+  }
+}

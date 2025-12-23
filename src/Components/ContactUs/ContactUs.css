@@ -1,0 +1,188 @@
+.contactus-heading {
+    text-align: center;
+    color: #374558;
+    font-size: 36px;
+    margin: 40px 0px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+.contact-info {
+    max-width: 800px;
+    margin: 0px auto;
+    margin-bottom: 70px;
+    padding: 30px;
+    font-size: 1.6rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0px 20px white;
+}
+.contact-info:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+.contact-data {
+    color: #374558;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+.contact-info strong {
+    color: #333;
+}
+.contact-link{
+    color: #374558;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #374558;
+    text-decoration: underline;
+}
+
+.contact-data,
+.contact-info h2{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+.contactus-sub{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+.subheading-contact{
+    font-size: 1.4rem;
+    margin-left: 0px;
+    color: #374558;
+}
+.Qrs{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.subheading-contact{
+    font-size: 20px;
+    margin-left: 0px;
+    color: #374558;
+}
+.qrimg{
+    width: 150px;
+    height: 150px;
+    align-items: center;
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* --- Media Queries for Responsiveness --- */
+
+/* Small Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+    .contactus-heading {
+        font-size: 28px;
+        margin: 20px 0;
+    }
+    .contact-info {
+        max-width: 95%;
+        margin-bottom: 30px;
+        padding: 15px;
+    }
+    .contact-info:hover {
+        transform: scale(1.0);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    .contactus-sub {
+        flex-direction: column;
+        gap: 30px;
+        margin: 0;
+    }
+    .contact-data {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        line-height: 1.6;
+    }
+    .subheading-contact {
+        font-size: 1.2rem;
+    }
+    .Qrs {
+        flex-direction: row;
+        gap: 30px;
+    }
+    .qrimg {
+        width: 120px;
+        height: 120px;
+    }
+    .sub2, .sub21 {
+        text-align: center;
+    }
+}
+
+/* Medium Mobile Devices and Small Tablets (481px to 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .contactus-heading {
+        font-size: 32px;
+        margin: 30px 0;
+    }
+    .contact-info {
+        max-width: 90%;
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+    .contactus-sub {
+        flex-direction: column;
+        gap: 50px;
+        margin: 5px;
+    }
+    .contact-data {
+        font-size: 1.1rem;
+    }
+    .subheading-contact {
+        font-size: 1.3rem;
+    }
+    .Qrs {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .qrimg {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+/* Tablets and Small Laptops (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contact-info {
+        max-width: 700px;
+        padding: 25px;
+    }
+    .contactus-sub {
+        gap: 100px;
+        margin: 10px;
+    }
+    .contact-data {
+        font-size: 1.15rem;
+    }
+    .Qrs {
+        gap: 60px;
+    }
+    .qrimg {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+/* Desktops and Large Laptops (1025px and up) */
+@media (min-width: 1025px) {
+    .contact-info {
+        max-width: 800px;
+    }
+}

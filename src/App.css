@@ -1,0 +1,11 @@
+.page{
+    background-image: url('https://i.pinimg.com/736x/ca/f1/ee/caf1ee7b875cd796b445676bf7378438.jpg');
+    color: #f0f8ff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Ostrich sans';
+    margin: 0;
+    font-size: 19.2px;
+}

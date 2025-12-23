@@ -1,0 +1,56 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.subpage-ipc-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 40%;
+  object-fit: cover;
+  position: absolute;
+}
+
+/* ------------------------ */
+/* RESPONSIVE STYLES FOR THE IMAGE */
+/* ------------------------ */
+
+/* Large desktops / laptops */
+@media (max-width: 1400px) {
+  .subpage-ipc-logo {
+    width: 50px;   /* Reduced size for large screens */
+    height: 50px;
+  }
+}
+
+/* Medium desktops / tablets */
+@media (max-width: 1200px) {
+  .subpage-ipc-logo {
+    width: 48px;   /* Slightly smaller for medium screens */
+    height: 48px;
+  }
+}
+
+/* Tablets and small screens */
+@media (max-width: 992px) {
+  .subpage-ipc-logo {
+    width: 45px;   /* Smaller size for tablets */
+    height: 45px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .subpage-ipc-logo {
+    width: 40px;   /* Smaller size for mobile */
+    height: 40px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .subpage-ipc-logo {
+    width: 35px;   /* Smallest size for very small screens */
+    height: 35px;
+  }
+}

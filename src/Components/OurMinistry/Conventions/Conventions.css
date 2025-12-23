@@ -1,0 +1,112 @@
+.convideo-container {
+    position: relative;
+    width: 100%;
+    padding-top: 40.25%;
+    margin: 20px auto;
+    overflow: hidden;
+    text-align: center;
+}
+.con-video-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.convention-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.convention-sep-data{
+    padding: 20px;
+}
+.convention-sep-data p{
+    color: #1d2d44;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: justify;
+}
+.ConventionsH{
+    text-align: center;
+    color: white;
+    background-color: #1d2d44;
+}
+.conventions-pdf-div {
+    align-items: center;
+    margin-bottom: 30px;
+}
+/* --- Media Queries for Responsiveness --- */
+
+/* Small Mobile Devices (e.g., up to 480px) */
+@media (max-width: 480px) {
+    .convideo-container {
+        padding-top: 56.25%;
+        margin: 10px auto;
+    }
+    .convention-video {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .ConventionsH {
+        font-size: 18px;
+        padding: 5px 0;
+    }
+    .convention-sep-data {
+        padding: 10px;
+    }
+    .convention-sep-data p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .conventions-pdf-div {
+        margin-bottom: 20px;
+    }
+}
+
+/* Medium Mobile Devices and Tablets (e.g., 481px to 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .convideo-container {
+        padding-top: 50%;
+        margin: 15px auto;
+    }
+    .ConventionsH {
+        font-size: 20px;
+        padding: 8px 0;
+    }
+    .convention-sep-data {
+        padding: 15px;
+    }
+    .convention-sep-data p {
+        font-size: 18px;
+    }
+    .conventions-pdf-div {
+        margin-bottom: 25px;
+    }
+}
+
+/* Tablets and Small Laptops (e.g., 768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .convideo-container {
+        padding-top: 45%;
+        margin: 20px auto;
+    }
+    .convention-sep-data {
+        padding: 20px;
+    }
+    .convention-sep-data p {
+        font-size: 19px;
+    }
+    .convention-video {
+        border-radius: 15px;
+    }
+}
+
+/* Desktops and Large Laptops (1025px and up) */
+@media (min-width: 1025px) {
+    .convideo-container {
+        padding-top: 40.25%;
+    }
+}
