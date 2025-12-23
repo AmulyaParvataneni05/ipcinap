@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import { useHeaderFooter } from "./HeaderFooterContext";
-import IPCLogo from '../Photos/IPC_Logo1.png'
+import IPCLogo from '../Photos/IPC_LOGO1.png'
 import './index.css'
 function RootLayout() {
   const { isHeaderFooterVisible } = useHeaderFooter();
